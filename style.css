@@ -1,0 +1,74 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("https://images.unsplash.com/photo-1613771404784-3a5686aa2be3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80");
+    background-size: cover;
+    height: 100vh;
+    min-width: 37.5rem;
+    font-size: 15px;
+    position: relative;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.score-display {
+    display: flex;
+    width: 37.5rem;
+    justify-content: space-between;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: black;
+    padding: 0.5rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    color: white;
+}
+
+.game-wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    grid-template-rows: repeat(6, 100px);
+}
+
+.game-wrapper>img {
+    width: 100px;
+    height: 100px;
+    background-color: #f7f7f7;
+    border: none;
+    cursor: pointer;
+}
+
+.game-wrapper>img:hover {
+    filter: brightness(0.9);
+}
+
+#tile-30 {
+    border-radius: 0 0 0 0.5rem;
+}
+
+#tile-35 {
+    border-radius: 0 0 0.5rem 0;
+}
+
+.game-result-msg {
+    position: absolute;
+    top: 40%;
+    bottom: auto;
+    right: auto;
+    left: auto;
+    background-color: black;
+    color: white;
+    width: 26rem;
+    height: 12rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    visibility: hidden;
+    cursor: pointer;
+}
