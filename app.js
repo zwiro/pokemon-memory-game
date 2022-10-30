@@ -194,7 +194,7 @@ for (let i = 0; i < tilesArray.length; i++) {
 
 function revealTile() {
     const clickedTile = document.querySelector(`#${chosenTile.getAttribute('id')}`);
-    clickedTile.src = ' ';
+    clickedTile.removeAttribute('src');
     clickedTiles.push(clickedTile);
 }
 
